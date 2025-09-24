@@ -5,6 +5,7 @@ import com.customerrewards.models.Customer;
 import com.customerrewards.models.Transaction;
 import com.customerrewards.repository.CustomerRepository;
 import com.customerrewards.repository.TransactionRepository;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -12,6 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Service
 public class RewardsService {
 
     final private CustomerRepository customerRepository;
